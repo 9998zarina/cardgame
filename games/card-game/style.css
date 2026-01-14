@@ -18,6 +18,21 @@ body {
     text-align: center;
 }
 
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.home-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 h1 {
     color: white;
     margin-bottom: 20px;

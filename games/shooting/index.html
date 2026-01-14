@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우주 슈팅 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" class="home-btn">🏠 홈으로</a>
+        <h1>우주 슈팅</h1>
+        <div class="game-wrapper">
+            <div class="game-area">
+                <canvas id="game" width="400" height="600"></canvas>
+                <div class="overlay" id="overlay">
+                    <div class="overlay-content">
+                        <p id="overlay-text">우주 슈팅</p>
+                        <button id="start-btn">시작</button>
+                    </div>
+                </div>
+            </div>
+            <div class="side-panel">
+                <div class="info-box">
+                    <h3>점수</h3>
+                    <p id="score">0</p>
+                </div>
+                <div class="info-box">
+                    <h3>생명</h3>
+                    <p id="lives">❤️❤️❤️</p>
+                </div>
+                <div class="info-box">
+                    <h3>웨이브</h3>
+                    <p id="wave">1</p>
+                </div>
+                <div class="controls">
+                    <h3>조작법</h3>
+                    <p>← → : 이동</p>
+                    <p>Space : 발사</p>
+                    <p>P : 일시정지</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

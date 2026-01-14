@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" class="home-btn">🏠 홈으로</a>
+        <h1>테트리스</h1>
+        <div class="game-wrapper">
+            <div class="game-area">
+                <canvas id="tetris" width="300" height="600"></canvas>
+                <div class="overlay" id="overlay">
+                    <div class="overlay-content">
+                        <p id="overlay-text">게임 시작</p>
+                        <button id="start-btn">시작</button>
+                    </div>
+                </div>
+            </div>
+            <div class="side-panel">
+                <div class="info-box">
+                    <h3>점수</h3>
+                    <p id="score">0</p>
+                </div>
+                <div class="info-box">
+                    <h3>레벨</h3>
+                    <p id="level">1</p>
+                </div>
+                <div class="info-box">
+                    <h3>다음 블록</h3>
+                    <canvas id="next" width="100" height="100"></canvas>
+                </div>
+                <div class="controls">
+                    <h3>조작법</h3>
+                    <p>← → : 이동</p>
+                    <p>↑ : 회전</p>
+                    <p>↓ : 빠른 하강</p>
+                    <p>Space : 즉시 하강</p>
+                    <p>P : 일시정지</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
