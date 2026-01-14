@@ -24,6 +24,33 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.difficulty-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.difficulty-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.difficulty-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.difficulty-btn.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
 .game-info {
     display: flex;
     justify-content: center;
@@ -56,6 +83,10 @@ h1 {
     gap: 15px;
     justify-content: center;
     perspective: 1000px;
+}
+
+.game-board.hard {
+    grid-template-columns: repeat(6, 100px);
 }
 
 .card {
@@ -121,10 +152,29 @@ h1 {
     min-height: 36px;
 }
 
+@media (max-width: 700px) {
+    .game-board.hard {
+        grid-template-columns: repeat(4, 70px);
+    }
+}
+
 @media (max-width: 500px) {
+    .difficulty-selector {
+        flex-wrap: wrap;
+    }
+
+    .difficulty-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
     .game-board {
         grid-template-columns: repeat(4, 70px);
         gap: 10px;
+    }
+
+    .game-board.hard {
+        grid-template-columns: repeat(4, 70px);
     }
 
     .card {
