@@ -288,7 +288,7 @@ function startGame() {
             drop();
             update();
         }
-    }, Math.max(100, 1000 - (level - 1) * 100));
+    }, Math.max(50, 500 - (level - 1) * 50));
 
     update();
 }
